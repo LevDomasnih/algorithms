@@ -2,8 +2,8 @@ const binarySearch = (list, item) => {
     let low = 0
     let high = list.length - 1
     let times = 0 // not req
+    let timer = new Date().getMilliseconds()
 
-    console.log(list)
     while (low <= high) {
         times++ // not req
 
@@ -12,8 +12,9 @@ const binarySearch = (list, item) => {
 
         if (guess === item){
             return {
+                time: new Date().getMilliseconds() - timer ,
                 index: middle,
-                times // not req
+                times
             }
         }
         if (guess > item) {
@@ -22,6 +23,7 @@ const binarySearch = (list, item) => {
             low = middle + 1
         }
     }
+    return null
 }
 
 module.exports = binarySearch
