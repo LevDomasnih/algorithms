@@ -1,5 +1,5 @@
-const binarySearch = require('./binarySearch')
-const selectedSort = require('./selected-sort')
+const binarySearch = require('./search/binarySearch')
+const selectedSort = require('./sort/selected-sort')
 const countDown = require('./recursion/countDown')
 const fact = require('./recursion/factorial')
 
