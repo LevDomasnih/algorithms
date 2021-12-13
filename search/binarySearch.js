@@ -1,3 +1,5 @@
+// Сложность - O(n**2)
+
 const binarySearch = (list, item) => {
     let low = 0
     let high = list.length - 1

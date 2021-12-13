@@ -1,3 +1,5 @@
+// Сложность - O(n**2)
+
 const findSmallestIndex = (arr) => {
     let smallestElement = arr[0]
     let smallestIndex = 0

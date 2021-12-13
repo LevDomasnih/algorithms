@@ -1,3 +1,5 @@
+// Худшая сложность - O(n**2), средняя - O(n log n), лучшая - O(log n)
+
 const quickSort = (array) => {
     if (array.length < 2) return array
 
